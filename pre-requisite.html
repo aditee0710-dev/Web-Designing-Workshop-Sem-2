@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        header{
+    position:absolute;
+    top:0;
+    right:0;
+    width:100%;
+    height:40px;
+    background:linear-gradient(#8b4513,#5c2c06);
+    border-bottom:4px solid gold;
+}
+
+.settings-btn{
+    position:absolute;
+    top:0;
+    right:25px;
+    background:linear-gradient(#ff2e2e,#b30000);
+    color:gold;
+    font-size:22px;
+    text-decoration:none;
+    padding:20px 16px;
+    border: radius 40px;;
+    box-shadow:0 6px 10px rgba(0,0,0,0.4);
+    transition:0.3s;
+}
+
+
+.settings-btn:hover{
+    transform:scale(1.05);
+}
+
+body{
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:linear-gradient(to right,#000911,#073f48);
+}
+.container{
+    width:95%;
+    max-width:380px;
+    padding:20px;
+    text-align:center;
+}
+
+
+
+
+h2{
+    color:white;
+    margin-bottom:25px;
+    letter-spacing:2px;
+}
+
+
+.btn{
+    width:100%;
+    padding:15px;
+    margin:12px 0;
+    border:none;
+    border-radius:18px;
+    font-size:17px;
+    font-weight:bold;
+    color:white;
+    cursor:pointer;
+    transition:0.3s ease;
+    box-shadow:0 6px 12px rgba(0,0,0,0.3);
+}
+
+.green{
+    background:linear-gradient(to right,#03431e,#0e5e37);
+}
+
+.blue{
+    background:linear-gradient(to right,#2fcfe1,#05343a);
+}
+
+.btn:hover{
+    transform:scale(1.05);
+    box-shadow:0 8px 18px rgba(0,0,0,0.4);
+}
+
+.more{
+    margin-top:25px;
+    color:white;
+    font-size:14px;
+    letter-spacing:1px;
+}
+
+.games{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:10px;
+    margin-top:10px;
+}
+
+.game-box{
+    background:white;
+    border-radius:12px;
+    padding:15px 5px;
+    font-size:12px;
+    font-weight:bold;
+    transition:0.3s;
+    height: 100px;
+    width: 80px; ;
+}
+
+.game-box:hover{
+    transform:translateY(-5px);
+    box-shadow:0 6px 15px rgba(0,0,0,0.3);
+}
+
+@media(max-width:480px){
+    .chess-icon{
+        font-size:65px;
+    }
+    h2{
+        font-size:18px;
+    }
+    .btn{
+        font-size:15px;
+        padding:12px;
+    }
+    .games{
+        grid-template-columns:repeat(2,1fr);
+    }
+}
+
+</style>
+</head>
+<body>
+    <header>
+    <a href="settings.html" class="settings-btn">⚙</a>
+    </header>
+<div class="container">
+
+    <img src="https://t3.ftcdn.net/jpg/05/71/99/86/360_F_571998686_7q0qDN2lvCn5wv90SHEepoffd0Pq8NRY.jpg" alt="" height="150" width="150" style="border-radius:50%; margin-bottom:20px;">
+
+    <h2>CHOOSE YOUR MODE</h2>
+
+    <button class="btn green">PLAY VS COMPUTER</button>
+    <button class="btn blue">
+        <a href="2players.html">2 PLAYERS</a>
+    </button>
+    <button class="btn blue">
+        <a href="puzzle.html">PUZZLES</a>
+    </button>
+    <button class="btn blue">
+        <a href="learnchess.html">LEARN CHESS</a>
+    </button>
+
+    <div class="more">MORE GAMES</div>
+
+    <div class="games">
+        <div class="game-box">Mahjong
+            <img src="https://tse4.mm.bing.net/th/id/OIP.tGnRHdCsAA3JmaNxeSea7AHaFj?pid=Api&P=0&h=180" alt="" height="50" width="50" style="display:block; margin:10px auto;">
+        </div>
+        <div class="game-box">Tile Club
+            <img src="https://play-lh.googleusercontent.com/okQHARCGbvcGRyHHPLLmdHPY3k9ja1aklKSSfBl8ZsnDyKB2BFvPxueqKVgwcPB_tlg" alt="" height="50" width="50" style="display:block; margin:10px auto;">
+        </div>
+        <div class="game-box">Checkers
+            <img src="https://tse1.mm.bing.net/th/id/OIP.X63MopCaALoNuh_QI1KMxgHaEo?pid=Api&P=0&h=180" alt="" height="50" width="50" style="display:block; margin:10px auto;">
+        </div>
+        <div class="game-box">Sudoku
+            <img src="https://tse1.mm.bing.net/th/id/OIP.NAc-nxlPVxmx2PislEgqdwHaHa?pid=Api&P=0&h=180" alt="" height="50" width="50" style="display:block; margin:10px auto;">
+        </div>
+    </div>
+
+</div>
+
+</body>
+</html>

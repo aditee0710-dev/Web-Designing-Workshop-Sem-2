@@ -1,0 +1,85 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Learn Chess</title>
+
+<style>
+body{
+    margin:0;
+    font-family:Arial;
+    background:#0b3d3f;
+    color:white;
+    text-align:center;
+}
+
+h2{
+    background:brown;
+    padding:15px;
+    margin:0;
+}
+
+.section{
+    background:#8b4513;
+    margin:20px;
+    padding:15px;
+    border-radius:10px;
+}
+
+.section h3{
+    margin-bottom:15px;
+}
+
+.grid{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:10px;
+}
+
+.box{
+    background:#a0522d;
+    padding:15px;
+    border-radius:8px;
+}
+
+.green-btn{
+    background:green;
+    padding:12px;
+    margin:10px 0;
+    border-radius:8px;
+}
+
+</style>
+</head>
+
+<body>
+
+<h2>SELECT A LESSON TO LEARN</h2>
+
+<div class="section">
+    <h3>MOVES</h3>
+    <div class="grid">
+        <div class="box">Pawn</div>
+        <div class="box">Knight</div>
+        <div class="box">Bishop</div>
+        <div class="box">Rook</div>
+        <div class="box">Queen</div>
+        <div class="box">King</div>
+    </div>
+</div>
+
+<div class="section">
+    <h3>BASIC CONCEPTS</h3>
+    <div class="green-btn">Capturing</div>
+    <div class="green-btn">Notation</div>
+</div>
+
+<div class="section">
+    <h3>CHECK</h3>
+    <div class="green-btn">Check</div>
+    <div class="green-btn">Checkmate</div>
+</div>
+
+</body>
+</html>

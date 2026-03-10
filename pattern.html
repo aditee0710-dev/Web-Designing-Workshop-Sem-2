@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        console.log("\nSimple Pyramid");
+        for(let i=1;i<=5;i++)
+    {
+        let row="";
+        for(let j=1;j<=i;j++)
+    {row+="*"}
+    console.log(row);
+    }
+    // 2. Flipped Simple Pyramid
+console.log("\nFlipped Simple Pyramid");
+for(let i=5;i>=1;i--){
+    let row="";
+    for(let j=1;j<=i;j++){
+        row+="* ";
+    }
+    console.log(row);
+}
+
+
+// 3. Inverted Pyramid
+console.log("\nInverted Pyramid");
+for(let i=5;i>=1;i--){
+    let row="";
+    for(let s=1;s<=5-i;s++){
+        row+="";
+    }
+    
+
+    console.log(row);
+}
+
+
+// 4. Flipped Inverted Pyramid
+
+for(let i=5;i>=1;i--){
+
+    let row="";
+
+    // spaces
+    for(let s=1;s<=5-i;s++){
+        row += "  ";
+    }
+
+    // stars
+    for(let j=1;j<=i;j++){
+        row += "* ";
+    }
+
+    console.log(row);
+}
+
+
+// 5. Triangle
+console.log("\nTriangle");
+for(let i=1;i<=5;i++){
+    let row="";
+    for(let s=1;s<=5-i;s++){
+        row+=" ";
+    }
+    for(let j=1;j<=i;j++){
+        row+="* ";
+    }
+    console.log(row);
+}
+
+
+// 6. Inverted Triangle
+console.log("\nTriangle");
+for(let i=1;i<=5;i++){
+    let row="";
+    for(let s=1;s<=5-i;s++){
+        row+=" ";
+    }
+    for(let j=1;j<=i;j++){
+        row+="* ";
+    }
+    console.log(row);
+}
+
+
+// 7. Half Diamond
+console.log("\nHalf Diamond");
+for(let i=1;i<=5;i++){
+    let row="";
+    for(let j=1;j<=i;j++){
+        row+="* ";
+    }
+    console.log(row);
+}
+for(let i=4;i>=1;i--){
+    let row="";
+    for(let j=1;j<=i;j++){
+        row+="* ";
+    }
+    console.log(row);
+}
+
+
+// 8. Flipped Half Diamond
+console.log("\nFlipped Half Diamond");
+for(let i=5;i>=1;i--){
+    let row="";
+    for(let j=1;j<=i;j++){
+        row+="* ";
+    }
+    console.log(row);
+}
+for(let i=2;i<=5;i++){
+    let row="";
+    for(let j=1;j<=i;j++){
+        row+="* ";
+    }
+    console.log(row);
+}
+
+
+// 9. Diamond Pattern
+console.log("\nDiamond Pattern");
+for(let i=1;i<=5;i++){
+    let row="";
+    for(let s=1;s<=5-i;s++){
+        row+=" ";
+    }
+    for(let j=1;j<=i;j++){
+        row+="* ";
+    }
+    console.log(row);
+}
+for(let i=4;i>=1;i--){
+    let row="";
+    for(let s=1;s<=5-i;s++){
+        row+=" ";
+    }
+    for(let j=1;j<=i;j++){
+        row+="* ";
+    }
+    console.log(row);
+}
+
+
+// 10. Hourglass Pattern
+console.log("\nHourglass Pattern");
+for(let i=5;i>=1;i--){
+    let row="";
+    for(let s=1;s<=5-i;s++){
+        row+=" ";
+    }
+    for(let j=1;j<=i;j++){
+        row+="* ";
+    }
+    console.log(row);
+}
+for(let i=2;i<=5;i++){
+    let row="";
+    for(let s=1;s<=5-i;s++){
+        row+=" ";
+    }
+    for(let j=1;j<=i;j++){
+        row+="* ";
+    }
+    console.log(row);
+}
+
+
+// 11. Number Pyramid
+console.log("\nNumber Pyramid");
+for(let i=1;i<=5;i++){
+    let row="";
+    for(let j=1;j<=i;j++){
+        row+=i+" ";
+    }
+    console.log(row);
+}
+
+
+// 12. Rotated Number Pyramid
+console.log("\nRotated Number Pyramid");
+for(let i=1;i<=4;i++){
+    let row="";
+    for(let j=1;j<=i;j++){
+        row+=(i+j-1)+" ";
+    }
+    console.log(row);
+}
+
+
+// 13. Palindrome Triangle
+console.log("\nPalindrome Triangle");
+for(let i=1;i<=4;i++){
+    let row="";
+    for(let j=i;j>=1;j--){
+        row+=j+" ";
+    }
+    for(let j=2;j<=i;j++){
+        row+=j+" ";
+    }
+    console.log(row);
+}
+
+
+// 14. Alphabet Pyramid
+console.log("\nAlphabet Pyramid");
+for(let i=0;i<4;i++){
+    let row="";
+    for(let j=0;j<=i;j++){
+        row+=String.fromCharCode(65+i)+" ";
+    }
+    console.log(row);
+}
+
+
+// 15. Continuous Alphabet Pyramid
+console.log("\nContinuous Alphabet Pyramid");
+let ch=65;
+for(let i=1;i<=4;i++){
+    let row="";
+    for(let j=1;j<=i;j++){
+        row+=String.fromCharCode(ch++)+" ";
+    }
+    console.log(row);
+}
+
+</script></body>
+</html>
+    </script>
+</body>
+</html>

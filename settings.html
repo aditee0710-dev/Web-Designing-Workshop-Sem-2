@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Settings</title>
+
+<style>
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:Arial;
+}
+
+body{
+  background:linear-gradient(#003b3f,#021e21);
+  color:white;
+}
+
+.header{
+  height:80px;
+  background:linear-gradient(#8b3e12,#5c2306);
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-size:22px;
+  font-weight:bold;
+  box-shadow:inset 0 -5px gold;
+}
+
+.container{
+  width:95%;
+  max-width:420px;
+  margin:20px auto;
+  background:linear-gradient(#5b2505,#411701);
+  padding:20px;
+  border-radius:15px;
+  border:3px solid gold;
+}
+
+
+.section{
+  margin:20px 0;
+}
+
+.mode{
+  display:flex;
+  gap:10px;
+  margin-top:10px;
+}
+
+.mode button{
+  flex:1;
+  padding:12px;
+  border:none;
+  border-radius:10px;
+  background:linear-gradient(#a63d00,#6d2200);
+  color:white;
+  font-weight:bold;
+  cursor:pointer;
+  transition:0.3s;
+}
+
+.mode button:hover{
+  background:linear-gradient(#39ff14,#00b712);
+}
+
+.option{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:12px;
+  margin:12px 0;
+  background:#431602;
+  border-radius:10px;
+}
+
+.btn{
+  width:100%;
+  padding:14px;
+  margin:10px 0;
+  border:none;
+  border-radius:12px;
+  background:linear-gradient(#197509,#075c10);
+  color:white;
+  font-weight:bold;
+  cursor:pointer;
+  transition:0.3s;
+}
+
+.btn:hover{
+  transform:scale(1.05);
+}
+
+.footer{
+  text-align:center;
+  margin:15px;
+  font-size:14px;
+  opacity:0.8;
+}
+
+@media(max-width:480px){
+  .btn{font-size:14px}
+}
+</style>
+</head>
+
+<body>
+
+<div class="header">SETTINGS</div>
+
+<div class="container">
+
+  <div class="section">
+    <strong>Play with</strong>
+    <div class="mode">
+      <button>3D</button>
+      <button>2D</button>
+    </div>
+  </div>
+
+  <div class="option">
+    <span>Highlight available moves</span>
+    <span>On</span>
+  </div>
+
+  <div class="option">
+    <span>Highlight pieces</span>
+    <span>Off</span>
+  </div>
+
+  <div class="option">
+    <span>Sounds</span>
+    <span>On</span>
+  </div>
+
+  <button class="btn">Language - English</button>
+  <button class="btn">Remove Ads ₹280.00</button>
+  <button class="btn">Reset Statistics</button>
+  <button class="btn">Privacy Options</button>
+
+</div>
+
+</body>
+</html>
